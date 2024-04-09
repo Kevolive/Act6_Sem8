@@ -24,7 +24,7 @@ public class Main {
 
     // Método para calcular el salario devengado
     public static double calcularSalarioDevengado(int salarioBase, int horasTrabajo, int horasExtras) {
-        // Implementar solución
+        calcularSalarioDevengado = (salarioBase + horasTrabajo + horasExtras);
         return 0;
     }
 
