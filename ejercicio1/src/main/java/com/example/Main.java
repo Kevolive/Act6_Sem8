@@ -25,13 +25,13 @@ public class Main {
     // Método para calcular el salario devengado
     public static double calcularSalarioDevengado(int salarioBase, int horasTrabajo, int horasExtras) {
         double salarioPorHora = salarioBase / horasTrabajo;
-        double salarioExtra = salarioPorHora * 1.5 * horasExtras;  
-        return salarioBase + salarioExtra;
+        double valorHorasExtra = salarioPorHora * 0.25 * horasExtras;  
+        return salarioBase + valorHorasExtra;
     }
 
     // Método para calcular las deducciones
     public static double calcularDeducciones(double salarioDevengado, double auxilioTransporte) {
-        double porcentajeDeducciones = 0.16;  // Example: 16% total for taxes and social contributions
+        double porcentajeDeducciones = 0.05;  
         return salarioDevengado * porcentajeDeducciones;
     }
     }
