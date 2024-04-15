@@ -24,14 +24,14 @@ public class Main {
 
     // Método para calcular el salario devengado
     public static double calcularSalarioDevengado(int salarioBase, int horasTrabajo, int horasExtras) {
-        double salarioPorHora = salarioBase / horasTrabajo;
+        double salarioPorHora = salarioBase / horasTrabajo; //re realiza el 25% por horas extras diurnas
         double valorHorasExtra = salarioPorHora * 0.25 * horasExtras;  
         return salarioBase + valorHorasExtra;
     }
 
     // Método para calcular las deducciones
     public static double calcularDeducciones(double salarioDevengado, double auxilioTransporte) {
-        double porcentajeDeducciones = 0.05;  
+        double porcentajeDeducciones = 0.08;  //8% a la Seguridad Social, 4% empleado y 4% empresa 
         return salarioDevengado * porcentajeDeducciones;
     }
     }
